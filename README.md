@@ -8,9 +8,31 @@
 
 [GNN code](https://github.com/amoyag/GNN/blob/main/GNN_BS.ipynb)
 
-# Apuntes propios.
 
-# Redes Neuronales de Grafos (GNN): Entendiendo Datos de Redes con Aprendizaje Profundo
+## Documentos del Repositorio
+
+### 0. **`GNN_tnbc_genes.ipynb`** 
+Este notebook es la razón del análisis en este repositorio. Contiene un flujo de trabajo completo que toma los 20 genes de interés relacionados con el TNBC y los expande a través de proteínas mediante el algoritmo de Kneiborgh utilizando la base de datos STRING. Esta expansión incluye las relaciones proteicas basadas en la expresión genética.
+
+Una vez obtenida esta red ampliada, se aplica una red neuronal gráfica (GNN) para predecir genes relacionados con el cáncer. Este análisis es clave para identificar nuevos posibles genes involucrados en el TNBC, proporcionando así una herramienta poderosa para el descubrimiento de biomarcadores.
+
+### 1. `top_tnbc-genes.txt`
+Este archivo contiene un listado de 20 genes altamente relacionados con el cáncer de mama triple negativo (TNBC). Estos genes han sido seleccionados por su relevancia en estudios previos y se utilizarán como punto de partida para el análisis con redes neuronales gráficas (GNN).
+
+### 2. `GNN_BS.ipynb`
+Este notebook de Jupyter incluye código de referencia y ejemplos sobre la creación y entrenamiento de una red neuronal gráfica (GNN). Es un recurso útil para comprender los fundamentos de cómo las GNN pueden ser aplicadas a datos biológicos, como redes de interacción proteica o redes de regulación génica.
+
+### 3. Artículos Científicos de Referencia
+- **Greener_2022_Nature Reviews Molecular Cell Biology_A guide to machine learning for biologists.pdf**  
+  Un artículo de revisión que ofrece una guía clara para biólogos sobre cómo aplicar técnicas de machine learning en estudios biológicos. Es un excelente recurso para quienes están empezando en el campo.
+  
+- **LeCun_2015_Nature_Deep learning.pdf**  
+  Este artículo presenta los fundamentos del deep learning, escrito por pioneros del campo como Yann LeCun, y es esencial para comprender las bases de las redes neuronales profundas, incluyendo las GNNs.
+  
+- **Muzio_2020_Briefings in Bioinformatics_Biological network analysis with deep learning.pdf**  
+  Este artículo revisa cómo las redes biológicas pueden ser analizadas usando deep learning, específicamente aplicando GNNs a problemas biológicos complejos, como la predicción de interacciones proteicas y la identificación de genes relacionados con enfermedades.
+
+# Teoría sobre Redes Neuronales de Grafos (GNN):
 
 ## De Aprendizaje Profundo a Redes Neuronales de Grafos
 El aprendizaje profundo ha revolucionado el análisis de datos complejos mediante redes neuronales artificiales con múltiples capas. Aunque arquitecturas como las Redes Neuronales Convolucionales (CNNs) son excelentes para datos estructurados (como imágenes), muchos sistemas del mundo real, especialmente en biología, se representan mejor como redes o grafos. 
@@ -49,9 +71,3 @@ Al aplicar GNNs a problemas biológicos, es importante tener en cuenta la selecc
 
 ## Direcciones Futuras
 El campo de las GNNs sigue avanzando rápidamente, con enfoques emergentes que integran múltiples tipos de datos y redes, desarrollan modelos más interpretables, y manejan datos de redes dinámicas.
-
-### Lecturas Recomendadas:
-- Muzio, G., O’Bray, L. & Borgwardt, K. Análisis de redes biológicas con aprendizaje profundo. Brief. Bioinform. (2020).
-- Greener, J. G., Kandathil, S. M., Moffat, L. & Jones, D. T. Guía de aprendizaje automático para biólogos. Nat. Rev. Mol. Cell Biol. (2022).
-- Camacho, D. M., Collins, K. M., Powers, R. K. & Costello, J. C. Aprendizaje automático de próxima generación para redes biológicas. Cell (2018).
-- LeCun, Y., Bengio, Y. & Hinton, G. Aprendizaje profundo. Nature (2015).
