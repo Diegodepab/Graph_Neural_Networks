@@ -1,4 +1,4 @@
-# Graph Neural Networks: Understanding Network Data with Deep Learning
+# Información original
 
 [Will AI take my job?](https://amoyag.github.io/GNN/Will_AI_take_my_job)
 
@@ -8,3 +8,50 @@
 
 [GNN code](https://github.com/amoyag/GNN/blob/main/GNN_BS.ipynb)
 
+# Apuntes propios.
+
+# Redes Neuronales de Grafos (GNN): Entendiendo Datos de Redes con Aprendizaje Profundo
+
+## De Aprendizaje Profundo a Redes Neuronales de Grafos
+El aprendizaje profundo ha revolucionado el análisis de datos complejos mediante redes neuronales artificiales con múltiples capas. Aunque arquitecturas como las Redes Neuronales Convolucionales (CNNs) son excelentes para datos estructurados (como imágenes), muchos sistemas del mundo real, especialmente en biología, se representan mejor como redes o grafos. 
+
+Por ejemplo, las redes de interacción de proteínas o las redes metabólicas no siguen patrones regulares como las imágenes, lo que ha llevado al desarrollo de las GNN, modelos diseñados específicamente para trabajar con datos estructurados en forma de redes.
+
+## Importancia de las Redes en Biología
+Los sistemas biológicos están interconectados por naturaleza, desde interacciones moleculares hasta vías celulares. Estas redes biológicas incluyen:
+
+- Redes de Interacción Proteína-Proteína (PPI)
+- Redes Metabólicas
+- Redes Reguladoras de Genes
+- Redes de Interacción Fármaco-Fármaco
+
+La estructura de estas redes contiene información valiosa: proteínas que interactúan suelen tener funciones relacionadas, genes cercanos en redes reguladoras tienden a participar en procesos biológicos similares. Por ello, las redes no solo son visualizaciones, sino también fuentes de conocimientos biológicos importantes.
+
+## Redes Neuronales de Grafos: Aprendizaje Basado en Estructuras de Redes
+Las GNN adaptan los principios del aprendizaje profundo para trabajar con datos en forma de redes. A diferencia de las redes neuronales tradicionales, las GNN pueden aprender tanto de las características de los nodos individuales (como las propiedades de una proteína) como de las relaciones entre ellos (como las interacciones proteicas).
+
+Una de las innovaciones clave de las GNN es la capacidad de generar *embeddings*, que son representaciones aprendidas de los nodos que capturan tanto sus características individuales como su contexto en la red. Esto es crucial para tareas como la predicción de funciones de proteínas.
+
+## El Proceso de Aprendizaje en las GNNs
+En las GNNs, el aprendizaje se basa en la "propagación de mensajes", donde los nodos intercambian información con sus vecinos a través de las conexiones de la red. Este proceso iterativo permite a cada nodo aprender de su entorno local y global, logrando representaciones ricas que capturan tanto las características del nodo como la estructura de la red.
+
+## Aplicaciones de las GNN en Biología de Sistemas
+Las GNNs han demostrado ser eficaces en varias aplicaciones biológicas, como:
+
+- Predicción de funciones de proteínas en redes PPI
+- Descubrimiento de fármacos, como la predicción de interacciones fármaco-objetivo
+- Análisis de enfermedades, incluyendo clasificación de subtipos de cáncer y predicción de asociaciones gen-enfermedad
+
+El éxito de las GNN en estos campos resalta el poder de aprovechar la estructura de red para obtener información biológica significativa.
+
+## Consideraciones Técnicas
+Al aplicar GNNs a problemas biológicos, es importante tener en cuenta la selección de características, la construcción de redes de calidad, y la arquitectura del modelo, que puede variar según las necesidades específicas del problema.
+
+## Direcciones Futuras
+El campo de las GNNs sigue avanzando rápidamente, con enfoques emergentes que integran múltiples tipos de datos y redes, desarrollan modelos más interpretables, y manejan datos de redes dinámicas.
+
+### Lecturas Recomendadas:
+- Muzio, G., O’Bray, L. & Borgwardt, K. Análisis de redes biológicas con aprendizaje profundo. Brief. Bioinform. (2020).
+- Greener, J. G., Kandathil, S. M., Moffat, L. & Jones, D. T. Guía de aprendizaje automático para biólogos. Nat. Rev. Mol. Cell Biol. (2022).
+- Camacho, D. M., Collins, K. M., Powers, R. K. & Costello, J. C. Aprendizaje automático de próxima generación para redes biológicas. Cell (2018).
+- LeCun, Y., Bengio, Y. & Hinton, G. Aprendizaje profundo. Nature (2015).
