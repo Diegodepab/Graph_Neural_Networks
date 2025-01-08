@@ -14,7 +14,7 @@
 ### 0. **`GNN_tnbc_genes.ipynb`** 
 Este notebook es la razón del análisis en este repositorio. Contiene un flujo de trabajo completo que toma los 20 genes de interés relacionados con el TNBC y los expande a través de proteínas mediante el algoritmo de Kneiborgh utilizando la base de datos STRING. Esta expansión incluye las relaciones proteicas basadas en la expresión genética.
 
-Una vez obtenida esta red ampliada, se aplica una red neuronal gráfica (GNN) para predecir genes relacionados con el cáncer. Este análisis es clave para identificar nuevos posibles genes involucrados en el TNBC, proporcionando así una herramienta poderosa para el descubrimiento de biomarcadores.
+Una vez obtenida esta red ampliada, se aplica una red neuronal gráfica (GNN) para predecir genes relacionados con el cáncer. Este análisis es clave para identificar nuevos posibles genes involucrados en el TNBC, proporcionando así una herramienta poderosa para el descubrimiento de biomarcadores. (Esto se realizo con ayuda de [MarioPasc](https://github.com/MarioPasc)
 
 ### 1. `top_tnbc-genes.txt`
 Este archivo contiene un listado de 20 genes altamente relacionados con el cáncer de mama triple negativo (TNBC). Estos genes han sido seleccionados por su relevancia en estudios previos y se utilizarán como punto de partida para el análisis con redes neuronales gráficas (GNN).
